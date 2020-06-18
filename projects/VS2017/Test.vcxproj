@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Test</ProjectName>
+    <ProjectGuid>{21AF5959-2CF1-417D-90ED-70052151E734}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="DefaultEnv.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="DefaultEnv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\bin\</OutDir>
+    <IntDir>$(ProjectDir)..\..\obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\bin\</OutDir>
+    <IntDir>$(ProjectDir)..\..\obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\libs\boost;$(ProjectDir)..\..\libs\ogg\include;$(ProjectDir)..\..\libs\vorbis\include;$(ProjectDir)..\..\libs\theora\include;$(ProjectDir)..\..\libs\zlib\include;$(ProjectDir)..\..\libs\luabind\include;$(ProjectDir)..\..\libs\lua\include;$(ProjectDir)..\..\libs\jpeg\include;$(ProjectDir)..\..\libs\png\include;$(ProjectDir)..\..\libs\webp\include;$(ProjectDir)..\..\libs\freetype\include;$(ProjectDir)..\..\libs\angle\include;$(ProjectDir)..\..\libs\pugixml\include;$(ProjectDir)..\..\libs\OpenAL\include;$(ProjectDir)..\..\engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0501;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <StringPooling>true</StringPooling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Version.lib;comctl32.lib;psapi.lib;shell32.lib;advapi32.lib;user32.lib;gdi32.lib;comdlg32.lib;luad.lib;luabindd.lib;pngd.lib;jpegd.lib;oggd.lib;vorbisd.lib;theorad.lib;zlibd.lib;engined.lib;freetyped.lib;libwebp.lib;pugixmld.lib;OpenAL32.lib;libEGL.lib;libGLESv2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\libs\boost\stage\lib;$(ProjectDir)..\..\libs\zlib\lib\vc14.1;$(ProjectDir)..\..\libs\jpeg\lib\vc14.1;$(ProjectDir)..\..\libs\png\lib\vc14.1;$(ProjectDir)..\..\libs\lua\lib\vc14.1;$(ProjectDir)..\..\libs\luabind\lib\vc14.1;$(ProjectDir)..\..\libs\ogg\lib\vc14.1;$(ProjectDir)..\..\libs\vorbis\lib\vc14.1;$(ProjectDir)..\..\libs\theora\lib\vc14.1;$(ProjectDir)..\..\libs\freetype\lib\vc14.1;$(ProjectDir)..\..\libs\openal\libs\Win32;$(ProjectDir)..\..\libs\libwebp\lib\vc14.1;$(ProjectDir)..\..\libs\pugixml\lib\vc14.1;$(ProjectDir)..\..\libs\angle\lib;$(ProjectDir)..\..\engine\bin\vc2017;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\libs\boost;$(ProjectDir)..\..\libs\ogg\include;$(ProjectDir)..\..\libs\vorbis\include;$(ProjectDir)..\..\libs\theora\include;$(ProjectDir)..\..\libs\zlib\include;$(ProjectDir)..\..\libs\luabind\include;$(ProjectDir)..\..\libs\lua\include;$(ProjectDir)..\..\libs\jpeg\include;$(ProjectDir)..\..\libs\png\include;$(ProjectDir)..\..\libs\webp\include;$(ProjectDir)..\..\libs\freetype\include;$(ProjectDir)..\..\libs\angle\include;$(ProjectDir)..\..\libs\pugixml\include;$(ProjectDir)..\..\libs\OpenAL\include;$(ProjectDir)..\..\engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0501;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Version.lib;psapi.lib;shell32.lib;advapi32.lib;user32.lib;gdi32.lib;comdlg32.lib;comctl32.lib;lua.lib;luabind.lib;png.lib;jpeg.lib;ogg.lib;vorbis.lib;theora.lib;zlib.lib;engine.lib;freetype.lib;libwebp.lib;pugixml.lib;OpenAL32.lib;libEGL.lib;libGLESv2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\libs\boost\stage\lib;$(ProjectDir)..\..\libs\zlib\lib\vc14.1;$(ProjectDir)..\..\libs\jpeg\lib\vc14.1;$(ProjectDir)..\..\libs\png\lib\vc14.1;$(ProjectDir)..\..\libs\lua\lib\vc14.1;$(ProjectDir)..\..\libs\luabind\lib\vc14.1;$(ProjectDir)..\..\libs\ogg\lib\vc14.1;$(ProjectDir)..\..\libs\vorbis\lib\vc14.1;$(ProjectDir)..\..\libs\theora\lib\vc14.1;$(ProjectDir)..\..\libs\freetype\lib\vc14.1;$(ProjectDir)..\..\libs\openal\libs\Win32;$(ProjectDir)..\..\libs\libwebp\lib\vc14.1;$(ProjectDir)..\..\libs\pugixml\lib\vc14.1;$(ProjectDir)..\..\libs\angle\lib;$(ProjectDir)..\..\engine\bin\vc2017;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\AssetsManager.cpp" />
+    <ClCompile Include="..\..\src\Bomb.cpp" />
+    <ClCompile Include="..\..\src\Cloud.cpp" />
+    <ClCompile Include="..\..\src\ECS.cpp" />
+    <ClCompile Include="..\..\src\Effect.cpp" />
+    <ClCompile Include="..\..\src\EffectManager.cpp" />
+    <ClCompile Include="..\..\src\Target.cpp" />
+    <ClCompile Include="..\..\src\Bullet.cpp" />
+    <ClCompile Include="..\..\src\BulletManager.cpp" />
+    <ClCompile Include="..\..\src\Button.cpp" />
+    <ClCompile Include="..\..\src\Cannon.cpp" />
+    <ClCompile Include="..\..\src\Collider.cpp" />
+    <ClCompile Include="..\..\src\ColliderManager.cpp" />
+    <ClCompile Include="..\..\src\GameManager.cpp" />
+    <ClCompile Include="..\..\src\GameScore.cpp" />
+    <ClCompile Include="..\..\src\GameScoreManager.cpp" />
+    <ClCompile Include="..\..\src\GameStateManager.cpp" />
+    <ClCompile Include="..\..\src\GameTimer.cpp" />
+    <ClCompile Include="..\..\src\Helper.cpp" />
+    <ClCompile Include="..\..\src\Input.cpp" />
+    <ClCompile Include="..\..\src\InputManager.cpp" />
+    <ClCompile Include="..\..\src\LifeTimer.cpp" />
+    <ClCompile Include="..\..\src\Main.cpp" />
+    <ClCompile Include="..\..\src\Node.cpp" />
+    <ClCompile Include="..\..\src\Aim.cpp" />
+    <ClCompile Include="..\..\src\PlayerManager.cpp" />
+    <ClCompile Include="..\..\src\DecorManager.cpp" />
+    <ClCompile Include="..\..\src\TargetManager.cpp" />
+    <ClCompile Include="..\..\src\TestAppDelegate.cpp" />
+    <ClCompile Include="..\..\src\TestWidget.cpp" />
+    <ClCompile Include="..\..\src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TextNode.cpp" />
+    <ClCompile Include="..\..\src\Timer.cpp" />
+    <ClCompile Include="..\..\src\TimerManager.cpp" />
+    <ClCompile Include="..\..\src\Transform.cpp" />
+    <ClCompile Include="..\..\src\UIManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\AssetsManager.h" />
+    <ClInclude Include="..\..\src\Bomb.h" />
+    <ClInclude Include="..\..\src\Cloud.h" />
+    <ClInclude Include="..\..\src\ECS.h" />
+    <ClInclude Include="..\..\src\Effect.h" />
+    <ClInclude Include="..\..\src\EffectManager.h" />
+    <ClInclude Include="..\..\src\Target.h" />
+    <ClInclude Include="..\..\src\Bullet.h" />
+    <ClInclude Include="..\..\src\BulletManager.h" />
+    <ClInclude Include="..\..\src\Button.h" />
+    <ClInclude Include="..\..\src\Callback.h" />
+    <ClInclude Include="..\..\src\Cannon.h" />
+    <ClInclude Include="..\..\src\Collider.h" />
+    <ClInclude Include="..\..\src\ColliderManager.h" />
+    <ClInclude Include="..\..\src\GameManager.h" />
+    <ClInclude Include="..\..\src\GameScore.h" />
+    <ClInclude Include="..\..\src\GameScoreManager.h" />
+    <ClInclude Include="..\..\src\GameStateManager.h" />
+    <ClInclude Include="..\..\src\GameTimer.h" />
+    <ClInclude Include="..\..\src\Helper.h" />
+    <ClInclude Include="..\..\src\Input.h" />
+    <ClInclude Include="..\..\src\InputManager.h" />
+    <ClInclude Include="..\..\src\LifeTimer.h" />
+    <ClInclude Include="..\..\src\Node.h" />
+    <ClInclude Include="..\..\src\Aim.h" />
+    <ClInclude Include="..\..\src\PlayerManager.h" />
+    <ClInclude Include="..\..\src\DecorManager.h" />
+    <ClInclude Include="..\..\src\TargetManager.h" />
+    <ClInclude Include="..\..\src\TestAppDelegate.h" />
+    <ClInclude Include="..\..\src\TestWidget.h" />
+    <ClInclude Include="..\..\src\stdafx.h" />
+    <ClInclude Include="..\..\src\TextNode.h" />
+    <ClInclude Include="..\..\src\Timer.h" />
+    <ClInclude Include="..\..\src\TimerManager.h" />
+    <ClInclude Include="..\..\src\Transform.h" />
+    <ClInclude Include="..\..\src\UIManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\bin\base_p\Layers.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\..\bin\base_p\Res.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\bin\base_p\start.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\bin\base_p\input.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

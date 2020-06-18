@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{2d4710b5-8479-460f-9191-a979f2f0884d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{582ad4ec-2022-4b82-bb37-74eeac449897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{1b1640fe-1f8d-4f6d-972e-1eba7128c4a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{7bc42228-84f6-4d0f-8f26-6d23b4c0ad35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{42b3df1b-eb58-4d84-b13a-f9998e18f1f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\AssetsManager">
+      <UniqueIdentifier>{2088eaee-308e-4273-a04e-910bf9042ce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\GameManager">
+      <UniqueIdentifier>{191ca0ee-6113-4115-a6cb-bbf5b23a5905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\PlayerManager">
+      <UniqueIdentifier>{9b660510-9e31-4eed-96ad-93edf0713124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\GameStateManager">
+      <UniqueIdentifier>{c8d2c097-4280-4472-8d8d-9abea6bb6976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\UIManager">
+      <UniqueIdentifier>{48c33d06-cd5f-4ca0-ab86-57c11de5e356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS">
+      <UniqueIdentifier>{fdeed81a-ca06-4300-8bee-c6a7f7200967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\TimerManger">
+      <UniqueIdentifier>{6f224a83-1952-4528-a8cf-fc4eb21e6b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{f338f574-6b65-4520-b122-94dcfd93d78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\BulletManger">
+      <UniqueIdentifier>{f66e1f02-c90f-4e30-a4c7-4652cfc1e6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\ColliderManager">
+      <UniqueIdentifier>{a444b285-457a-4504-93c7-fad74dcf4abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\TargetManager">
+      <UniqueIdentifier>{45bb55d1-f429-4a01-b347-904907165ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\GameScoreManager">
+      <UniqueIdentifier>{16874671-71aa-4ca2-b926-c9fc23af2959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\EffectManager">
+      <UniqueIdentifier>{a5e6eec6-f96f-4ad3-bf62-dc5acd308752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\DecorManager">
+      <UniqueIdentifier>{716d9bca-474c-4ebc-b03e-7052462e6728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Core">
+      <UniqueIdentifier>{15d2015a-cec0-44ec-93d5-7c371465b083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Core\Transform">
+      <UniqueIdentifier>{8196a24e-13a1-4e6e-afbf-d22063f3d0df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Core\Node">
+      <UniqueIdentifier>{c7a8b98c-5848-4783-a7dd-0adf0a4813d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Core\Timer">
+      <UniqueIdentifier>{6faf4b8e-1281-415f-9042-962d5e7d496e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Core\Input">
+      <UniqueIdentifier>{951572c3-ef92-46f1-bb61-063cf18d53c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Core\Effect">
+      <UniqueIdentifier>{8913fe29-af2a-4141-8f07-6a01cfc8b488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Core\Collider">
+      <UniqueIdentifier>{fdc9d32c-7169-4383-9421-d67dc38b5f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom">
+      <UniqueIdentifier>{3ec364b2-f6fc-4654-bce4-4061ff982c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Timer">
+      <UniqueIdentifier>{72f48f33-0baf-475b-89f7-4f2a80ae5cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Timer\GameTimer">
+      <UniqueIdentifier>{36c09535-6f5e-4de0-a83d-5f63783eaa83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Timer\LifeTimer">
+      <UniqueIdentifier>{605b376e-2a1f-4c4e-89e7-12f16dd39758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Target">
+      <UniqueIdentifier>{fe35fde5-532c-46a8-89a3-7a04b90af034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Target\Core">
+      <UniqueIdentifier>{d83c24b6-6aa1-454a-8b6f-43235206d17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Target\Bomb">
+      <UniqueIdentifier>{f6d3ad91-b981-4ea9-b242-d6ff1e37583b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Input">
+      <UniqueIdentifier>{faf7079e-8d9e-4828-a1b0-41cf892a98b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Input\AimInput">
+      <UniqueIdentifier>{69240fba-df46-4066-8e71-e713272eea57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Input\CannonInput">
+      <UniqueIdentifier>{899b45e8-9184-44eb-a081-a7135584c70f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Input\Button">
+      <UniqueIdentifier>{b279dae7-1c32-4c14-9760-0cb45fab085f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Bullet">
+      <UniqueIdentifier>{4cbfef08-67e5-4bc5-b63f-95a74664f2ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\GameScore">
+      <UniqueIdentifier>{68390307-8ed5-447d-83f9-4fbcb4eb237f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Custom\Cloud">
+      <UniqueIdentifier>{9d3547d4-a694-430e-a39f-2b204abf735b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers\InputManager">
+      <UniqueIdentifier>{038f188a-c73c-4faf-927d-e47004175b9b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TestWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stdafx.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TestAppDelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Transform.cpp">
+      <Filter>Source Files\Components\Core\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Node.cpp">
+      <Filter>Source Files\Components\Core\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AssetsManager.cpp">
+      <Filter>Source Files\Managers\AssetsManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameManager.cpp">
+      <Filter>Source Files\Managers\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Collider.cpp">
+      <Filter>Source Files\Components\Core\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Input.cpp">
+      <Filter>Source Files\Components\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Helper.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\InputManager.cpp">
+      <Filter>Source Files\Managers\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PlayerManager.cpp">
+      <Filter>Source Files\Managers\PlayerManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameStateManager.cpp">
+      <Filter>Source Files\Managers\GameStateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\UIManager.cpp">
+      <Filter>Source Files\Managers\UIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Button.cpp">
+      <Filter>Source Files\Components\Custom\Input\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TextNode.cpp">
+      <Filter>Source Files\Components\Core\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TimerManager.cpp">
+      <Filter>Source Files\Managers\TimerManger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Bullet.cpp">
+      <Filter>Source Files\Components\Custom\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BulletManager.cpp">
+      <Filter>Source Files\Managers\BulletManger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Timer.cpp">
+      <Filter>Source Files\Components\Core\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ColliderManager.cpp">
+      <Filter>Source Files\Managers\ColliderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TargetManager.cpp">
+      <Filter>Source Files\Managers\TargetManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameTimer.cpp">
+      <Filter>Source Files\Components\Custom\Timer\GameTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\LifeTimer.cpp">
+      <Filter>Source Files\Components\Custom\Timer\LifeTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameScore.cpp">
+      <Filter>Source Files\Components\Custom\GameScore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameScoreManager.cpp">
+      <Filter>Source Files\Managers\GameScoreManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Target.cpp">
+      <Filter>Source Files\Components\Custom\Target\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Bomb.cpp">
+      <Filter>Source Files\Components\Custom\Target\Bomb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\EffectManager.cpp">
+      <Filter>Source Files\Managers\EffectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Effect.cpp">
+      <Filter>Source Files\Components\Core\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Cloud.cpp">
+      <Filter>Source Files\Components\Custom\Cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\DecorManager.cpp">
+      <Filter>Source Files\Managers\DecorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ECS.cpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Aim.cpp">
+      <Filter>Source Files\Components\Custom\Input\AimInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Cannon.cpp">
+      <Filter>Source Files\Components\Custom\Input\CannonInput</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\TestWidget.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TestAppDelegate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Transform.h">
+      <Filter>Source Files\Components\Core\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Node.h">
+      <Filter>Source Files\Components\Core\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\AssetsManager.h">
+      <Filter>Source Files\Managers\AssetsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameManager.h">
+      <Filter>Source Files\Managers\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Collider.h">
+      <Filter>Source Files\Components\Core\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Input.h">
+      <Filter>Source Files\Components\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Helper.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PlayerManager.h">
+      <Filter>Source Files\Managers\PlayerManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\InputManager.h">
+      <Filter>Source Files\Managers\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameStateManager.h">
+      <Filter>Source Files\Managers\GameStateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\UIManager.h">
+      <Filter>Source Files\Managers\UIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Button.h">
+      <Filter>Source Files\Components\Custom\Input\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Callback.h">
+      <Filter>Source Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TextNode.h">
+      <Filter>Source Files\Components\Core\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TimerManager.h">
+      <Filter>Source Files\Managers\TimerManger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Bullet.h">
+      <Filter>Source Files\Components\Custom\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BulletManager.h">
+      <Filter>Source Files\Managers\BulletManger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Timer.h">
+      <Filter>Source Files\Components\Core\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ColliderManager.h">
+      <Filter>Source Files\Managers\ColliderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TargetManager.h">
+      <Filter>Source Files\Managers\TargetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameTimer.h">
+      <Filter>Source Files\Components\Custom\Timer\GameTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\LifeTimer.h">
+      <Filter>Source Files\Components\Custom\Timer\LifeTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameScore.h">
+      <Filter>Source Files\Components\Custom\GameScore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameScoreManager.h">
+      <Filter>Source Files\Managers\GameScoreManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Target.h">
+      <Filter>Source Files\Components\Custom\Target\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Bomb.h">
+      <Filter>Source Files\Components\Custom\Target\Bomb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\EffectManager.h">
+      <Filter>Source Files\Managers\EffectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Effect.h">
+      <Filter>Source Files\Components\Core\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Cloud.h">
+      <Filter>Source Files\Components\Custom\Cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\DecorManager.h">
+      <Filter>Source Files\Managers\DecorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ECS.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Aim.h">
+      <Filter>Source Files\Components\Custom\Input\AimInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Cannon.h">
+      <Filter>Source Files\Components\Custom\Input\CannonInput</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\bin\base_p\Layers.xml">
+      <Filter>XML</Filter>
+    </Xml>
+    <Xml Include="..\..\bin\base_p\Res.xml">
+      <Filter>XML</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\bin\base_p\start.lua">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\bin\base_p\input.txt">
+      <Filter>Config</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
